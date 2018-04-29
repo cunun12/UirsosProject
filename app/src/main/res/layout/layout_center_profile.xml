@@ -1,0 +1,175 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- *********** Bagian Body / Tengah ********* -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimaryDark">
+                <!--Background-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:alpha="0.4"
+                        android:src="@drawable/bg_login" />
+                </RelativeLayout>
+
+                <!--bagian nama jenis kelamin dan Photo pengguna-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <!--Image Profil-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/photoProfil"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/no_picture"
+                        app:civ_border_color="#FFffffff"
+                        app:civ_border_width="2dp" />
+
+                    <!-- NPM -->
+                    <TextView
+                        android:id="@+id/txtNPM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/npm"
+                        android:textStyle="italic" />
+
+                    <!--Nama Pengugna-->
+                    <TextView
+                        android:id="@+id/txtNamaPengguna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtJenisKelamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Bagian Tengah Content-->
+        <LinearLayout
+            android:id="@+id/biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/grey_border_bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_status"
+                    android:tint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/statusLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txtStatusUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:text="@string/Status"
+                        android:textStyle="bold|italic"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/image_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:src="@mipmap/ic_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_fakultas"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    android:id="@+id/txtFakultas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/fakultas"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/biography"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/historyUser"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</merge>

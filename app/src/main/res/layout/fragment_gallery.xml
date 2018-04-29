@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar Gallery-->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_top">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profileToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivCloseShare"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_close" />
+
+                    <Spinner
+                        android:id="@+id/spinerItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/ivCloseShare"
+                        android:layout_toRightOf="@+id/ivCloseShare"
+                        android:text="@string/gallery"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/lanjut"
+                        android:textColor="@color/bottomWhite"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_below="@id/relative1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60">
+
+            <!--Image yang diambil dari gallery/RecyclerView-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageGallery"/>
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/progresgallery"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"/>
+    </LinearLayout>
+
+</RelativeLayout>

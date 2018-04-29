@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">UirsosProject</string>
+
+    <string name="cowok">laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+
+    <string name="npm">NPM</string>
+    <string name="password">Password</string>
+
+    <string name="textlogin">Silakan masukan data login</string>
+    <string name="textRegister">Silakan Melakukan Pendaftaran</string>
+    <string name="login">LOGIN</string>
+    <string name="daftar">REGISTRASI</string>
+    <string name="simpan">SIMPAN</string>
+
+    <string name="punyaAkun">Belum punya akun? </string>
+    <string name="sudahPunya">Sudah punya akun? </string>
+
+    <string name="textLogo">Sosmed Kampus Universitas Islam Riau</string>
+
+    <string name="nama">Nama Pengguna</string>
+    <string name="gender">Gender</string>
+
+    <string name="jurusan">Jurusan</string>
+    <string name="email">Email</string>
+    <string name="noHp">No Handphone</string>
+
+    <!--bottom navigation-->
+    <string name="berita">Berita</string>
+    <string name="timeline">Timeline</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="Status">Apa yang dipikirkan</string>
+    <string name="fakultas">Fakultas</string>
+    <string name="setting">Account Setting</string>
+
+    <string name="stringProfile">Profile</string>
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="berita_kampus">Berita Kampus</string>
+
+    <!--String Berita-->
+    <string name="judul_berita">Judul</string>
+    <string name="deskripsi">Description</string>
+    <string name="tanggal">Tanggal Update</string>
+
+    <string name="gallery">GALLERY</string>
+    <string name="photo">PHOTO</string>
+    <string name="camera">OPEN CAMERA</string>
+    <string name="lanjut">Next</string>
+    <string name="selected_image">selected_image</string>
+    <string name="kosong">kosong</string>
+    <string name="tag_uirsos">UIRSOS</string>
+    <string name="news">Berita Kampus</string>
+    <string name="status">Status</string>
+    <string name="komentar">Komentar</string>
+    <string name="suka">0 Like</string>
+    <string name="husnul_mafar">Husnul Mafar</string>
+    <string name="textPost">Apa yang dilakukan?</string>
+    <string name="hari">Hari</string>
+    <string name="koma">, </string>
+    <string name="title_activity_first_sign_up">FirstSignUp</string>
+    <string name="belumpunya">Belum Punya Akun! </string>
+    <string name="textLogin">Silakan Login</string>
+    <string name="action_accountSetting">Account Setting</string>
+    <string name="accountsetting">Account Setting</string>
+    <string name="confirmpass">Confrim Password</string>
+    <string name="masukkan_data_profile">MASUKKAN DATA PROFILE</string>
+    <string name="description">Apa yang anda Lakukan?</string>
+    <string name="tambahkan_photo">Tambahkan Photo</string>
+    <string name="apa_yang_anda_pikirkan">Apa yang Anda Pikirkan?</string>
+    <string name="space"> </string>
+    <string name="dd_mm_yy">dd/mm/yy</string>
+    <string name="alamat">alamat</string>
+    <string name="Likes">Likes</string>
+    <string name="delete">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="koneksi_gagal">No Connection to Server</string>
+    <string name="no_koneksi">Tidak Ada Jaringan</string>
+    <string name="check">Check</string>
+    <string name="error_npm">NPM sudah terdaftar</string>
+    <string name="no_hp">No. Hp</string>
+    <string name="kode_verifikasi">Kode Verifikasi</string>
+    <string name="info_noTerdaftar">Kode dikirim ke no tujuan</string>
+</resources>
